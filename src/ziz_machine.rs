@@ -8,7 +8,7 @@ type Symbol = Option<String>;
 
 type StateIndex = u8;
 
-type TransitionIndex = u8;
+type TransitionIndex = String;
 
 type CallbackIndex = u8;
 
