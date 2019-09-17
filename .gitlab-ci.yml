@@ -19,7 +19,11 @@ image: "rust:latest"
 
 # Use cargo to test the project
 test:cargo:
-  script:
-    - rustc --version && cargo --version  # Print version info for debugging
-    - cargo build --verbose
-#    - cargo test --all --verbose
+    script:
+        - rustc --version && cargo --version  # Print version info for debugging
+        - cargo test --all --verbose
+
+build:cargo:
+    script:
+        - rustc --version && cargo --version  # Print version info for debugging
+        - cargo build --verbose
